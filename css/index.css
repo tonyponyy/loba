@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.transicion {
+  transition-duration: 1s, 5s;
+  opacity: 0;
+}
 
-
-#container{
-margin-top: 3.4vh;
-margin-bottom: 3.4vh;  
-height: 93.1vh;  
-width: 67vw;
-margin-left: 16vw;
-margin-right: 16vh;
+#container {
+  margin-top: 3.4vh;
+  margin-bottom: 3.4vh;
+  height: 93.1vh;
+  width: 67vw;
+  margin-left: 16vw;
+  margin-right: 16vh;
 
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
@@ -17,97 +20,84 @@ margin-right: 16vh;
     "iz ar1 cear ar2 de1"
     "iz2 ce1 cece ce2 de2"
     "iz3 ab1 ceab ab2 de3";
-
 }
 
-body{
-   font-size: 16px;
-       font-family: 'Roboto', sans-serif;
-   color: #E3431F;
-  
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #e3431f;
 }
 
-
-#splash{
-   grid-area: cece;
-      align-self: center;
-  justify-self: center;
-   
-}
-
-#arc_in{
-     grid-area: ceab;
-   align-self: center;
+#splash {
+  grid-area: cece;
+  align-self: center;
   justify-self: center;
 }
 
-#separador_sup{
-      grid-area: cear;
+#arc_in {
+  grid-area: ceab;
+  align-self: center;
   justify-self: center;
 }
 
-#whatsapp{
-   grid-area: ar1;
-   display:initial;
-   width: 120%;
-   margin-left: 50%;
+#separador_sup {
+  grid-area: cear;
+  justify-self: center;
 }
 
-#correo{
-    margin-left: -50%;
+#whatsapp {
+  grid-area: ar1;
+  display: initial;
+  width: 120%;
+  margin-left: 50%;
 }
 
-#whatsapp img{
-   width: 12%;
-   margin-right: 3px;
-   vertical-align: middle;
+#correo {
+  margin-left: -50%;
 }
 
-#correo{
-   grid-area: ar2;
+#whatsapp img {
+  width: 12%;
+  margin-right: 3px;
+  vertical-align: middle;
 }
 
-#izquierda{
-   grid-area: iz2;
+#correo {
+  grid-area: ar2;
 }
 
-#cantonada_es{
-   grid-area: iz;
+#izquierda {
+  grid-area: iz2;
 }
 
-#cantonada_dr{
-   grid-area: de1;
-   transform: rotate(90deg);
+#cantonada_es {
+  grid-area: iz;
 }
 
-#cantonada_esa{
-   grid-area: iz3;
-    transform: rotate(270deg);
+#cantonada_dr {
+  grid-area: de1;
+  transform: rotate(90deg);
 }
 
-.tall{
-   width: 7.08vw;
-}
-
-#cantonada_dra{
-   grid-area: de3;
-    transform: rotate(180deg);
-}
-
-
-#contacto{
+#cantonada_esa {
+  grid-area: iz3;
   transform: rotate(270deg);
-  margin-top: 6vw ;
-  
 }
 
-#contacto img{
-   margin-left: 0.5vw
+.tall {
+  width: 7.08vw;
 }
 
-.transicion{
-   transition-duration: 1s, 5s;
-    opacity: 0;
+#cantonada_dra {
+  grid-area: de3;
+  transform: rotate(180deg);
 }
 
+#contacto {
+  transform: rotate(270deg);
+  margin-top: 6vw;
+}
 
+#contacto img {
+  margin-left: 0.5vw;
+}
